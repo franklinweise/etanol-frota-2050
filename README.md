@@ -54,6 +54,7 @@ no artigo.
 | Figura 3 – Frota por segmento, 2010–2050 | `frota_segmentos.py` | `resultados/frota_segmentos_2010_2050.csv` |
 | Tabela 2, Figuras 4 e 5 – Frota, motorização e vendas de leves | `projecao_2050.py` | `resultados/projecao_2050.csv` |
 | Nota da Tabela 2 – Teste com a projeção da Anfavea para 2026 | `teste_2026.py` | (saída no terminal) |
+| Estimativa central de frota e vendas (PIB 1,5% a.a., média dos limites) | `cenario_central.py` | `resultados/cenario_central.csv` |
 | Tabela 3 – Motocicletas | `motos_projecao.py` | `resultados/motos_2050.csv` |
 | Figura 6 – Trajetórias de eletrificação | `modelo_frota_etanol_v3.py` (`TRAJETORIAS`) | — |
 | Tabela 4 – Etanol por segmento | `etanol_por_segmento.py` | `resultados/etanol_segmentos_2050.csv` |
