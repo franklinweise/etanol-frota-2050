@@ -58,6 +58,7 @@ no artigo.
 | Tabela 3 – Motocicletas | `motos_projecao.py` | `resultados/motos_2050.csv` |
 | Figura 6 – Trajetórias de eletrificação | `modelo_frota_etanol_v3.py` (`TRAJETORIAS`) | — |
 | Mix de vendas e participação dos BEV na frota, por trajetória | `eletrificacao_series.py` | `resultados/eletrificacao_mix_vendas.csv`, `resultados/eletrificacao_frota_bev.csv` |
+| Frota de leves por motorização (BEV, PHEV, HEV-flex, flex, diesel), por trajetória | `frota_motorizacao.py` | `resultados/frota_motorizacao_2025_2050.csv` |
 | Tabela 4 – Etanol por segmento | `etanol_por_segmento.py` | `resultados/etanol_segmentos_2050.csv` |
 | Figura 7 – Índice de demanda | `motos_projecao.py` | `resultados/etanol_leves_motos_2050.csv` |
 | Seção 2.4 – Efeito do híbrido-flex | `balanco_2050.py` | (saída no terminal) |
