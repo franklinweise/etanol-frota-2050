@@ -14,13 +14,13 @@ ND = 1 - r.D_FUT
 
 with open("resultados/eletrificacao_mix_vendas.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f, delimiter=";")
-    w.writerow(["ano", "trajetoria", "bev_pct", "phev_pct", "hev_flex_pct", "flex_pct", "diesel_pct"])
+    w.writerow(["ano", "trajetoria", "bev_pct", "phev_pct", "hev_flex_pct", "flex_pct", "diesel_pct", "recarregaveis_bev_phev_pct"])
     for t in TRAJ:
         x = r.mix_nd(t)
         for i, a in enumerate(m.YRS):
             if 2026 <= a <= 2050:
                 w.writerow([a, t] + [round(100 * x[k][i] * ND, 1) for k in ("BEV", "PHEV", "HEV", "ICE")]
-                           + [round(100 * r.D_FUT, 1)])
+                           + [round(100 * r.D_FUT, 1), round(100 * (x["BEV"][i] + x["PHEV"][i]) * ND, 1)])
 
 fl = {}
 for row in csv.DictReader(open("resultados/projecao_2050.csv", encoding="utf-8"), delimiter=";"):
