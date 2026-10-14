@@ -12,3 +12,4 @@ python3 modelo/cenario_central.py         # estimativa central: PIB 1,5% a.a., m
 python3 modelo/balanco_2050.py            # balanco, sensibilidades e hibrido-flex (Tabelas 5 e 6; Figura 8; secao 2.4)
 python3 modelo/teste_2026.py              # teste com a projecao da Anfavea para 2026 (nota da Tabela 2)
 echo "Concluido. Resultados em resultados/."
+python3 modelo/eletrificacao_series.py
